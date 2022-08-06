@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import "./home.scss";
+import "./login.scss";
 
-function Home() {
+function Login() {
   return (
     <div>
       <Navbar />
+      Login
     </div>
   );
 }
 
-export default Home;
+export default Login;
