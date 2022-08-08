@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 22em;
     line-height: 25px;
 
     .product {
@@ -13,13 +12,5 @@
     .product-title {
             font-weight: 600;
         }
-    }
-
-    .action {
-        display: flex;
-        flex-direction: column;
-        margin-left: 1em;
-        align-self: end;
-        justify-self: flex-end;
     }
 }
