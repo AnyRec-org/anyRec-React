@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5em 0;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0 1em;
+
+        li {
+            margin: 0 2em;
+        }
+    }
+}

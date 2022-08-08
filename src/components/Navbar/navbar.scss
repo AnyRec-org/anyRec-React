@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+a {
+    color: black;
+}
+nav {
+    padding: 2em;
+    font-family: "Lato";
+    display:  flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        Font-style: Black;
+        Font-size: 30px;
+        font-weight: 900;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            margin: 1em;
+        }
+    }
+}
