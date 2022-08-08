@@ -7,6 +7,7 @@
 }
 a {
     color: black;
+    cursor: pointer;
 }
 nav {
     padding: 2em;
@@ -27,6 +28,12 @@ nav {
 
         li {
             margin: 1em;
+        }
+        button {
+            background: none;
+            border: none;
+            vertical-align: middle;
+            cursor: pointer;
         }
     }
 }

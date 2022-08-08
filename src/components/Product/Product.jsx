@@ -1,5 +1,7 @@
 import React from "react";
 import "./product.scss";
+import { AiOutlineHeart} from "react-icons/ai"
+import {TbHeartOff } from "react-icons/tb"
 
 function Product(props) {
     return (
@@ -11,8 +13,8 @@ function Product(props) {
                 <a href="#"><b>Buy from Jumia </b></a>
             </div>
             <div className="action">
-                <a href="#">Recommend</a>
-                <a href="#">Discourage</a>
+                <a href="#"> <AiOutlineHeart /> Recommend</a>
+                <a href="#"> <TbHeartOff />Discourage</a>
             </div>
         </div>
     )
