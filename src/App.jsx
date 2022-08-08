@@ -8,7 +8,7 @@ import Login from "./pages/Login/Login";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/anyRec-React">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
