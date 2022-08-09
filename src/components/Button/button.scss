@@ -1,0 +1,10 @@
+@import "../../sass/mixins.scss";
+
+.big-btn {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  @include input-length;
+  font-size: 1.8rem;
+}

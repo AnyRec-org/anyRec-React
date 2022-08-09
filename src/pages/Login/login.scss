@@ -1,0 +1,32 @@
+@import "../../sass/mixins.scss";
+
+.log-in {
+  padding: 7rem;
+  text-align: center;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &--group {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  &__input {
+    @include input-length;
+    padding: 3rem;
+    outline: none;
+    border: 1px solid #b9bcbd;
+  }
+}
+
+.forgot-password,
+.sign-up {
+  display: block;
+  @include base-link(underline);
+}

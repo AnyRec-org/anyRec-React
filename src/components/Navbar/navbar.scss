@@ -1,0 +1,53 @@
+@import "../../sass/mixins.scss";
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo-box {
+    font-size: 16px;
+  }
+
+  &__logo {
+  }
+
+  &__link {
+    @include base-link(none);
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__burger {
+    position: relative;
+
+    &,
+    &::before,
+    &::after {
+      height: 0.3rem;
+      width: 2.5rem;
+      background-color: #000;
+      border-radius: 10vmax;
+      cursor: pointer;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+
+    &::before {
+      top: -0.7rem;
+    }
+
+    &::after {
+      top: 0.7rem;
+    }
+  }
+}

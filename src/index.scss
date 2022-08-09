@@ -30,12 +30,17 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Lato", sans-serif;
+  padding: 35px 44px 0;
 }
 
 /* A elements that don't have a class get default styles */

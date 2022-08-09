@@ -1,0 +1,10 @@
+@mixin input-length {
+  width: 41.8rem;
+  height: 6rem;
+  border-radius: 50vmax;
+}
+
+@mixin base-link($decoration) {
+  text-decoration: $decoration;
+  color: #000;
+} ;
