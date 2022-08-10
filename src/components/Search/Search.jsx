@@ -1,16 +1,19 @@
 import React from "react";
 import "./search.scss";
-import { FaSearch } from "react-icons/fa"
+import { RiSearchLine } from "react-icons/ri"
+import { MdOutlineCancel } from "react-icons/md"
 
-export default function Search(props) {
+export default function Search() {
     return (
         <>
-            <div className="search">
-                <input  type="text" placeholder={props.placeholder} />
-            </div>
+            <form className="search">
+                <input  type="text" placeholder="Body Cream For Men" />
+                <MdOutlineCancel style={{ marginRight: "1em", cursor: "pointer" }} />
+                <RiSearchLine style={{cursor: "pointer"}} />
+            </form>
             <div className="details">
-                <span>Category: {props.category}</span>
-                <span>Location: {props.location}</span>
+                <span>Category: Bodycare and Lifestyle</span>
+                <span>Location: Nigeria</span>
             </div>
         </>
     )

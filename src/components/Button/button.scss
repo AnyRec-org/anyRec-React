@@ -1,0 +1,16 @@
+.buttons {
+    height: auto;
+    
+    .btn {
+        width: 250px;
+        height: 60px;
+        background: black;
+        color: white;
+        border-radius: 35px;
+        margin: 1em 0;
+        
+    }
+    .btn:nth-child(1) {
+        
+    }
+}

@@ -2,17 +2,20 @@ $primary-color: #E5E5E5;
 
 
 .search {
-    width: 750px;
-    height: 60px;
-    margin: 1em auto;
+    width: 900px;
+    width: 765px;
+    height: 70px;
+    margin: 3em auto;
+    background: $primary-color;
+    border-radius: 35px;
+    padding: 1.5em 2em;
+
     
     input {
-        width: 765px;
-        height: 70px;
-        border-radius: 35px;
-        background: $primary-color;
         border: none;
-        padding: 1em 1.5em;
+        background: transparent;
+        width: 90%;
+        outline: none;
     }
 }
 

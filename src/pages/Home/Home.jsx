@@ -6,41 +6,43 @@ import Footer from "../../components/Footer/Footer";
 import "./home.scss";
 import {MdKeyboardArrowRight} from "react-icons/md"
 
+
+export const data = [
+  {
+    id: 1,
+    title: "Nivea Lotion",
+    lastRecommended: "Jan, 2022",
+    recommendedBy: "Favour and 92 others"
+
+  },
+  {
+    id: 2,
+    title: "Vaseline", 
+    lastRecommended: "Jan, 2022", 
+    recommendedBy: "Dupe and 52 others"
+  },
+  {
+    id: 3,
+    title: "SilverLine Lotion",
+    lastRecommended: "Dec, 2021", 
+    recommendedBy: "Precious and 60 others",
+  },
+  {
+    id: 4,
+    title: "Jumpo Ori", 
+    lastRecommended: "Dec, 2021", 
+    recommendedBy: "Cynthia and 20 others"
+  },
+  {
+    id: 5,
+    title: "CarolWhite", 
+    lastRecommended: "Aug, 2021", 
+    recommendedBy: "Joshua and 42 others"
+  }
+]
+
 function Home() {
 
-  const data = [
-    {
-      id: 1,
-      title: "Nivea Lotion",
-      lastRecommended: "Jan, 2022",
-      recommendedBy: "Favour and 92 others"
-
-    },
-    {
-      id: 2,
-      title: "Vaseline", 
-      lastRecommended: "Jan, 2022", 
-      recommendedBy: "Dupe and 52 others"
-    },
-    {
-      id: 3,
-      title: "SilverLine Lotion",
-      lastRecommended: "Dec, 2021", 
-      recommendedBy: "Precious and 60 others",
-    },
-    {
-      id: 4,
-      title: "Jumpo Ori", 
-      lastRecommended: "Dec, 2021", 
-      recommendedBy: "Cynthia and 20 others"
-    },
-    {
-      id: 5,
-      title: "CarolWhite", 
-      lastRecommended: "Aug, 2021", 
-      recommendedBy: "Joshua and 42 others"
-    }
-  ]
 
   //mapping over the data  from above
   const products = data.map(product => {
@@ -53,7 +55,7 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <Search category="Bodycare & Lifestyle" location="Nigeria" placeholder="Body Cream for Men" />
+      <Search />
 
       <section className="products-section">
         {products}
