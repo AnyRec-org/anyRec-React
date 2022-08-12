@@ -7,4 +7,22 @@
 @mixin base-link($decoration) {
   text-decoration: $decoration;
   color: #000;
-} ;
+}
+
+@mixin remove-default-list {
+  list-style: none;
+}
+
+@mixin position(
+  $pos: none,
+  $top: none,
+  $left: none,
+  $right: none,
+  $bottom: none
+) {
+  position: $pos;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}

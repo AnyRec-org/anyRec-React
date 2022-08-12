@@ -1,4 +1,6 @@
 @import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+@import "../../sass/animations.scss";
 
 .nav {
   display: flex;
@@ -9,9 +11,6 @@
     font-size: 16px;
   }
 
-  &__logo {
-  }
-
   &__link {
     @include base-link(none);
   }
@@ -20,10 +19,17 @@
     display: flex;
     align-items: center;
     gap: 3rem;
+    position: relative;
+  }
+
+  &__checkbox {
+    display: none;
   }
 
   &__burger {
+    display: block;
     position: relative;
+    z-index: 1000;
 
     &,
     &::before,
@@ -49,5 +55,55 @@
     &::after {
       top: 0.7rem;
     }
+  }
+
+  &__menu {
+  }
+
+  &__list {
+    display: none;
+    width: 35rem;
+    padding: 3rem;
+    margin: 0;
+    @include remove-default-list;
+    @include position(absolute, -1rem, none, -1rem);
+    box-shadow: $shadow-dark;
+    background-color: #fff;
+    border-radius: 1rem;
+    z-index: 900;
+    animation: pop-up 0.2s cubic-bezier(0, 0, 0, 1.6);
+
+    // &[open] {
+    //   animation: slide-left 0.5s cubic-bezier(0.49, 0.04, 0.79, 1.26);
+    // }
+
+    // &[closing] {
+    //   animation: slide-right 0.5s cubic-bezier(0.49, 0.04, 0.79, 1.26);
+    // }
+
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    &--overlay {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      z-index: 5;
+      animation: fade-in 0.2s ease-in-out;
+    }
+  }
+
+  &__checkbox:checked + .nav .nav__menu .nav__list,
+  &__checkbox:checked ~ .nav__list--overlay {
+    display: block;
   }
 }
